@@ -12,6 +12,13 @@
 		B01D7F7022376A3100B92C0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01D7F6E22376A3100B92C0A /* Main.storyboard */; };
 		B01D7F7222376A3200B92C0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B01D7F7122376A3200B92C0A /* Assets.xcassets */; };
 		B01D7F7522376A3200B92C0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01D7F7322376A3200B92C0A /* LaunchScreen.storyboard */; };
+		B01D7F7D22376ADD00B92C0A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01D7F7C22376ADD00B92C0A /* Utils.swift */; };
+		B01D7F802237774B00B92C0A /* HomeBottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01D7F7F2237774B00B92C0A /* HomeBottomControlsStackView.swift */; };
+		B01D7F832237831500B92C0A /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01D7F822237831500B92C0A /* TopNavigationStackView.swift */; };
+		B01D7F8522378CFA00B92C0A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01D7F8422378CFA00B92C0A /* CardView.swift */; };
+		B01D7F872238140D00B92C0A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01D7F862238140D00B92C0A /* User.swift */; };
+		B01D7F8B223822D000B92C0A /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01D7F8A223822D000B92C0A /* CardViewModel.swift */; };
+		B01D7F8D22382B4D00B92C0A /* Advertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01D7F8C22382B4D00B92C0A /* Advertiser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		B01D7F7122376A3200B92C0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B01D7F7422376A3200B92C0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B01D7F7622376A3200B92C0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B01D7F7C22376ADD00B92C0A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B01D7F7F2237774B00B92C0A /* HomeBottomControlsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomControlsStackView.swift; sourceTree = "<group>"; };
+		B01D7F822237831500B92C0A /* TopNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
+		B01D7F8422378CFA00B92C0A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		B01D7F862238140D00B92C0A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B01D7F8A223822D000B92C0A /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		B01D7F8C22382B4D00B92C0A /* Advertiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advertiser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,53 @@
 		B01D7F6922376A3100B92C0A /* L2 */ = {
 			isa = PBXGroup;
 			children = (
+				B01D7F882238141400B92C0A /* models */,
+				B01D7F892238220900B92C0A /* viewModels */,
+				B01D7F7E2237770000B92C0A /* views */,
 				B01D7F6A22376A3100B92C0A /* AppDelegate.swift */,
 				B01D7F6C22376A3100B92C0A /* ViewController.swift */,
 				B01D7F6E22376A3100B92C0A /* Main.storyboard */,
 				B01D7F7122376A3200B92C0A /* Assets.xcassets */,
 				B01D7F7322376A3200B92C0A /* LaunchScreen.storyboard */,
 				B01D7F7622376A3200B92C0A /* Info.plist */,
+				B01D7F81223779E500B92C0A /* helpers */,
 			);
 			path = L2;
+			sourceTree = "<group>";
+		};
+		B01D7F7E2237770000B92C0A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B01D7F7F2237774B00B92C0A /* HomeBottomControlsStackView.swift */,
+				B01D7F822237831500B92C0A /* TopNavigationStackView.swift */,
+				B01D7F8422378CFA00B92C0A /* CardView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		B01D7F81223779E500B92C0A /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B01D7F7C22376ADD00B92C0A /* Utils.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		B01D7F882238141400B92C0A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				B01D7F862238140D00B92C0A /* User.swift */,
+				B01D7F8C22382B4D00B92C0A /* Advertiser.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		B01D7F892238220900B92C0A /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B01D7F8A223822D000B92C0A /* CardViewModel.swift */,
+			);
+			path = viewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B01D7F6D22376A3100B92C0A /* ViewController.swift in Sources */,
+				B01D7F802237774B00B92C0A /* HomeBottomControlsStackView.swift in Sources */,
+				B01D7F8D22382B4D00B92C0A /* Advertiser.swift in Sources */,
 				B01D7F6B22376A3100B92C0A /* AppDelegate.swift in Sources */,
+				B01D7F7D22376ADD00B92C0A /* Utils.swift in Sources */,
+				B01D7F8B223822D000B92C0A /* CardViewModel.swift in Sources */,
+				B01D7F8522378CFA00B92C0A /* CardView.swift in Sources */,
+				B01D7F832237831500B92C0A /* TopNavigationStackView.swift in Sources */,
+				B01D7F872238140D00B92C0A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

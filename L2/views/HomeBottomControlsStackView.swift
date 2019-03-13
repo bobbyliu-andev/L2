@@ -1,21 +1,25 @@
-//
-//  HomeBottomControlsStackView.swift
-//  L2
-//
-//  Created by Chang Liu on 3/11/19.
-//  Copyright © 2019 Chang Liu. All rights reserved.
-//
-
 import UIKit
 
 class HomeBottomControlsStackView: UIStackView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        distribution = .fillEqually
+        heightAnchor.constraint(equalToConstant: 100).isActive = true
+        
+        let subviews = [#imageLiteral(resourceName: "1"),#imageLiteral(resourceName: "2"),#imageLiteral(resourceName: "3"),#imageLiteral(resourceName: "4"),#imageLiteral(resourceName: "5")].map { (img) -> UIView in
+            let btn = UIButton.init(type: .system)
+            btn.setImage(img.withRenderingMode(.alwaysOriginal), for: .normal)
+            return btn
+        }
+        
+        subviews.forEach { v in
+            addArrangedSubview(v)
+        }
     }
-    */
-
+    
+    required init(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
 }
