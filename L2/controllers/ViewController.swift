@@ -21,6 +21,13 @@ class ViewController: UIViewController {
         
         setupLayout()
         setupDummyCards()
+        
+        topStackView.settingButton.addTarget(self, action: #selector(goToRegisterVC), for: .touchUpInside)
+    }
+    
+    @objc fileprivate func goToRegisterVC() {
+        let vc = RegisterViewController()
+        present(vc, animated: true, completion: nil)
     }
 
     // MARK:- fileprivate
